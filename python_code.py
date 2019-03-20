@@ -15,9 +15,9 @@ while True:
     string = b_string.rstrip() # remove \n and \r from the string
     flt = float(string) # convert the string to a float
     
-    #https://api.thingspeak.com/update?api_key=U7HEWMOITHOD9LBM&field1=0
+    #https://api.thingspeak.com/update?api_key=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&field1=0
     base_url = "https://api.thingspeak.com/update?api_key="
-    api_key = "U7HEWMOITHOD9LBM"
+    api_key = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
     mid_url_1 ='&field1='     # field number, if only one field use 1
     url = base_url + api_key + mid_url_1 + string   # data_point
     #print(url)    # prints url to screen for feedback on when/what data is uploaded
@@ -42,13 +42,13 @@ import matplotlib.pyplot as plt
 results_num = input('How many data points?:')
 
 ## Read data stored on ThingSpeak.com
-# https://api.thingspeak.com/channels/714132/fields/1.json?api_key=HDWL8KCODG8WJKMV&results=2
+# https://api.thingspeak.com/channels/714132/fields/1.json?api_key=XXXXXXXXXXXXXXXXXXXXXXXXXX&results=2
 base_url = 'https://api.thingspeak.com/channels/'
 channel_num = '714132'
 mid_url = '/fields/'
 field_num = '1'
 next_url = '.json?'
-# api_url = 'HDWL8KCODG8WJKMV'
+# api_url = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
 end_url = 'results='
 results_num        #number of datapoints, saved as a string
 
